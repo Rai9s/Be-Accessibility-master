@@ -1,0 +1,680 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    outline: none;
+    font-family: 'Inter', sans-serif;
+}
+
+body {
+    background-color: hsla(213, 65%, 97%, 0.192);
+}
+
+#logo {
+    font-size: 20px;
+    color: rgb(242, 245, 253);
+    text-shadow: 2px 2px 4px rgb(16, 3, 77);
+}
+
+section,
+footer {
+    padding: 54px 0;
+}
+
+h3 {
+    font-size: 40px;
+}
+
+p {
+    color: #0000009c;
+}
+
+.container {
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 0 5%;
+}
+
+/* BOTÃO */
+.btn {
+    background-color: #073771;
+    color: white;
+    padding: 15PX 20PX;
+    border-radius: 10PX;
+    cursor: pointer;
+    display: inline-block;
+    transition: 0.1s;
+}
+
+.btn.animate-btn {
+    animation: animate-outline 1s ease-out infinite;
+}
+
+.btn:hover {
+    background-color: #295081;
+}
+
+@keyframes animate-outline {
+    from {
+        outline: 0px solid #4f9bf98a;
+    }
+
+    to {
+        outline: 15px solid #4f9bf900;
+    }
+}
+
+header {
+    background-color: #184B88;
+    background-image: url(img/img5copia.jpg);
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+#sobre {
+    background-image: url(img/imgsobre.png);
+}
+
+#produtos {
+    background-image: url(img/imgprodutos2.png);
+}
+
+/* MENU */
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 30px;
+}
+
+nav ul {
+    display: flex;
+    align-items: center;
+}
+
+nav ul a {
+    color: rgb(255, 255, 255);
+    margin: 0 25px;
+    text-transform: uppercase;
+    font-size: 14px;
+    display: block;
+}
+
+nav ul a:not(.btn)::after {
+    content: "";
+    background-color: #041f40;
+    height: 3px;
+    width: 0%;
+    display: block;
+    margin: 0 auto;
+    transition: 0.3s;
+}
+
+nav ul a:hover::after {
+    width: 100%;
+}
+
+/* menu mobile */
+nav .menu-icon {
+    cursor: pointer;
+    font-size: 25px;
+    color: white;
+    display: none;
+}
+
+nav .close-icon {
+    display: none;
+    font-size: 30px;
+    color: white;
+}
+
+/* TEXTO PRICIPAL */
+.banner {
+    display: flex;
+    justify-content: center;
+}
+
+.banner .banner-text {
+    margin: 150px;
+    text-align: center;
+    padding: 0 90px;
+}
+
+.banner .banner-text h1 {
+    font-size: 96px;
+    color: white;
+    text-shadow: 5px 5px 8px rgb(16, 3, 77);
+}
+
+.banner .banner-text p {
+    font-size: 20px;
+    color: #ededf0;
+    font-weight: lighter;
+    margin: 18px 0;
+}
+
+/* VISÃO, MISSÃO */
+.missao-visao .container {
+    display: flex;
+    align-items: center;
+}
+
+.missao-visao .missao-visao-text {
+    width: 50%;
+    padding: 0 5px;
+}
+
+.missao-visao .missao-visao-text h3 {
+    font-size: 60px;
+}
+
+.missao-visao .missao-visao-text p {
+    margin: 5px 0 10px 0;
+}
+
+.missao-visao .missao-visao-img {
+    width: 50%;
+}
+
+.missao-visao .missao-visao-img img {
+    width: 75%;
+}
+
+/* VALORES */
+.valores h3 {
+    text-align: center;
+}
+
+.valores p {
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.cards {
+    display: flex;
+    justify-content: center;
+}
+
+.valores .card-item {
+    background-color: #d3e6fd;
+    margin: 15px;
+    border-radius: 14px;
+    text-align: center;
+    width: 350px;
+    transition: 0.3s;
+}
+
+.valores .card-item img {
+    border-radius: 100%;
+    width: 80px;
+    display: block;
+    margin: 10px auto;
+}
+
+.valores .card-item .nome {
+    font-weight: 600;
+    font-size: 20px;
+    margin-bottom: 15px;
+    transition: 0.3s;
+}
+
+.valores .card-item .valores-text {
+    font-size: 15px;
+    padding: 0 15px;
+    transition: 0.3s;
+}
+
+.valores .card-item:hover {
+    background-color: #4f9cf9;
+    margin-top: -5px;
+}
+
+.valores .card-item:hover .nome,
+.valores .card-item:hover .valores-text {
+    color: white;
+}
+
+/* JUNTE SE A NOS */
+
+.junte .container {
+    display: flex;
+    align-items: center;
+}
+
+.junte .junte-text {
+    display: flex;
+    width: 50%;
+    padding: 0 50px;
+    text-align: center;
+}
+
+.junte h3 {
+    font-size: 20px;
+
+}
+
+.junte .junte-text a {
+    text-align: center;
+    display: flex;
+    width: 30%;
+    padding: 10px 30px;
+}
+
+
+/* PAGINA SOBRE */
+.sobre .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.sobre .sobre-text {
+    width: 50%;
+    padding-right: 40px;
+}
+
+.sobre .sobre-text p {
+    margin: 18px 0;
+    color: #000000a6;
+}
+
+.sobre .sobre-img {
+    width: 50%;
+}
+
+.sobre .sobre-img img {
+    width: 100%;
+    border-radius: 50px;
+}
+
+/* PRODUTOS */
+.produtos h3 {
+    font-size: 60px;
+    text-align: center;
+}
+
+.produtos .container>p {
+    font-size: 25px;
+    text-align: center;
+}
+
+.produtos .rows-cards {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    flex-wrap: wrap;
+}
+
+.produtos .row-card-item {
+    background-color: #d3e6fd;
+    width: 350px;
+    padding: 20px;
+    border-radius: 14px;
+    margin: 20px;
+    transition: 0.3s;
+}
+
+.produtos .row-card-item:hover {
+    background-color: #4f9cf9;
+}
+
+.produtos .row-card-item:hover p {
+    color: white;
+}
+
+.produtos .row-card-item img {
+    border-radius: 20px;
+    width: 100%;
+    padding: 9px;
+}
+
+.produtos .row-card-item p.nome-produtos {
+    margin: 5px 0;
+    transition: 0.3s;
+}
+
+.produtos .row-card-item p.descricao {
+    transition: 0.3s;
+}
+
+.btn-produtos {
+    padding: 10px 10px;
+    background-color: #295081;
+    color: white;
+    border-radius: 5px;
+}
+
+.dados {
+    background-color: #d3e6fd;
+}
+
+.dados .container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.dados .dados-item {
+    text-align: center;
+    margin: 15px;
+    color: #000000be;
+}
+
+.dados .dados-item img {
+    background-color: #4f9cf9;
+    border-radius: 14px;
+    padding: 10px;
+    margin-bottom: 15px;
+    width: 80px;
+}
+
+.dados .dados-item p {
+    font-size: 18px;
+}
+
+.dados .dados-item p strong {
+    font-size: 28px;
+}
+
+.contato-info {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 50px;
+}
+
+.contato-info .left-side {
+    width: 50%;
+    padding: 30px;
+    background-color: #4f9cf9;
+    border-radius: 14px;
+    margin-right: 50px;
+    height: fit-content;
+}
+
+.contato-info .left-side div {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.contato-info .left-side div i {
+    font-size: 24px;
+    margin-right: 20px;
+    color: white;
+}
+
+.contato-info .left-side p {
+    font-size: 17px;
+    color: white;
+}
+
+.contato-info .right-side {
+    width: 50%;
+}
+
+.contato-info .right-side input {
+    display: block;
+    width: 100%;
+    margin-bottom: 10px;
+    height: 47px;
+    padding: 15px;
+    border-radius: 9px;
+    transition: 0.3s;
+    border: 1px solid #f1f1f1;
+    color: #212121;
+    font-weight: lighter;
+}
+
+.contato-info .right-side input:focus,
+.contato-info .right-side textarea:focus {
+    border-color: #4f9cf9;
+}
+
+.contato-info .right-side textarea {
+    border: 1px solid #f1f1f1;
+    color: #212121;
+    border-radius: 9px;
+    margin-bottom: 10px;
+    padding: 15px;
+    width: 100%;
+    transition: 0.3s;
+    resize: none;
+}
+
+.contato-info .right-side button {
+    border: none;
+}
+
+/* CARRINHO */
+header {
+    background-color: #000000;
+    color: #fff;
+    text-align: center;
+    padding: 1em;
+}
+
+.cart-container {
+    max-width: 600px;
+    margin: 20px auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.product {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid #ddd;
+    padding: 10px 0;
+    margin-bottom: 10px;
+}
+
+.product img {
+    max-width: 80px;
+    max-height: 80px;
+    margin-right: 10px;
+}
+
+button {
+    background-color: rgb(61, 61, 247);
+    color: #fff;
+    padding: 8px 16px;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    transform: scale(1.1);
+    transition: 0.5s;
+    background-color: rgb(88, 88, 247);
+}
+
+
+
+
+
+/* MENU RESPONSIVO */
+@media(max-width: 480px) {
+
+    /* MENU RESPONSIVO */
+    .ul {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: #184B88;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        clip-path: circle(0% at 100% 0);
+        transition: 0.7s;
+    }
+
+    .open {
+        clip-path: circle(141.4% at 100% 0);
+    }
+
+    .ul a {
+        margin: 10px 0;
+        font-size: 16px;
+    }
+
+    nav .menu-icon {
+        display: block;
+    }
+
+    nav .close-icon {
+        display: block;
+        position: absolute;
+        top: 46px;
+        right: 28px;
+    }
+
+    /* HOME RESPONSIVO */
+    .missao-visao .missao-visao-text {
+        margin-top: 10px;
+        padding: 0 20px;
+        order: 1;
+    }
+
+    .missao-visao .container {
+        flex-direction: column;
+    }
+
+    .missao-visao .missao-visao-text h3 {
+        font-size: 48px;
+    }
+
+    .missao-visao .missao-visao-text,
+    .missao-visao .missao-img .visao-img {
+        width: 100%;
+    }
+
+    .banner .banner-text {
+        padding: 0;
+        margin: 80px;
+    }
+
+    .banner .banner-text h1 {
+        font-size: 80px;
+    }
+
+    .banner .banner-text p {
+        font-size: 15px;
+    }
+
+    .valores .card-item {
+        width: 100%;
+        flex-direction: column;
+        position: absolute;
+    }
+
+    .cards {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    /* SOBRE RESPONSIVO */
+    .sobre .container {
+        flex-direction: column-reverse;
+    }
+
+    .sobre .sobre-img,
+    .sobre .sobre-text {
+        width: 100%;
+    }
+
+    .sobre .sobre-text {
+        margin-top: 40px;
+    }
+
+    /* CONTATO RESPONSIVO */
+    .contato .contato-info {
+        flex-direction: column-reverse;
+    }
+
+    .contato-info .right-side,
+    .contato-info .left-side {
+        width: 100%;
+    }
+
+    .contato-info .right-side {
+        margin-bottom: 30px;
+    }
+}
+
+@media (max-width:500px) {
+    .banner .banner-text h1 {
+        font-size: 50px;
+    }
+
+    .missao-visao .missao-visao-text h3 {
+        font-size: 40px;
+    }
+}
+
+/* FOOTER */
+footer {
+    position: relative;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: #171717;
+    height: 200px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    color: #ffffff;
+    grid-template-columns: "auto auto";
+}
+
+#p {
+    max-width: 500px;
+    margin: 10px auto;
+    line-height: 28px;
+    font-size: 14px;
+    color: #ffffff;
+}
+
+#h3 {
+    max-width: 500px;
+    margin: 10px auto;
+    line-height: 28px;
+    font-size: 20px;
+    color: #ffffff;
+
+}
+
+#footer_copyright {
+    padding-top: 10%;
+    justify-content: center;
+    font-size: 0.9rem;
+    padding: 1.5rem;
+    font-weight: 100;
+    border-radius: 4px
+}
+
+
+
+#input_group button {
+    background-color: #031d7b;
+    color: rgb(255, 255, 255);
+    Padding: 3px 1.25rem;
+    Font-size: 1.125rem;
+    Height: 100%;
+    Border-radius: 0px 2px 2px 0px;
+    Cursor: pointer;
+    Transition: all 0.4s;
+
+}
+
+@media(max-width: 320px) {}
