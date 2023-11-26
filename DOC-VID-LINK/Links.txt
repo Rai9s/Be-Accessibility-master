@@ -1,0 +1,8 @@
+link do site:
+https://rai9s.github.io/Be-Accessibility-master/
+
+link do video:
+https://youtu.be/pkMnN9VlPDw?feature=shared
+
+link do GitHub:
+https://github.com/Rai9s/Be-Accessibility-master.git
